@@ -1,5 +1,8 @@
 pipeline {
     agent any
+        tools{
+        maven 'myn'
+        }
     stages {
         stage('Build Application') {
             steps {
@@ -22,3 +25,4 @@ pipeline {
 
     }
 }
+//above script under tool 'myn' is a configured maven plugin name which is configured under the Global configure plugin option//
